@@ -69,12 +69,12 @@ function ukrainerayons_listcounties() {
       'Петропавлівський район',
       'Покровський район',
       'Пятихатський район',
-      'Синельниківський район'
-      'Солонянський район'
-      'Софіївський район'
-      'Томаківський район'
-      'Царичанський район'
-      'Широківський район'
+      'Синельниківський район',
+      'Солонянський район',
+      'Софіївський район',
+      'Томаківський район',
+      'Царичанський район',
+      'Широківський район',
       'Юрївський район'
     ),
     4894 => array( // Донецька область Donets'ka Oblast' 
@@ -601,26 +601,6 @@ function ukrainerayons_loadcounties() {
       CRM_Core_DAO::executeQuery($query);
     }
   }
-}
-
-/**
- * Implements hook_civicrm_config().
- *
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_config
- */
-function ukrainerayons_civicrm_config(&$config) {
-  _ukrainerayons_civix_civicrm_config($config);
-}
-
-/**
- * Implements hook_civicrm_xmlMenu().
- *
- * @param $files array(string)
- *
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_xmlMenu
- */
-function ukrainerayons_civicrm_xmlMenu(&$files) {
-  _ukrainerayons_civix_civicrm_xmlMenu($files);
 }
 
 /**
